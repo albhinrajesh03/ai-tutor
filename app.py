@@ -1,10 +1,9 @@
 from pdf_loader import load_pdf
-from chromadb_reranker_rag import split_text, prepare_chunks, retrieve
+from basic_rag import split_text, retrieve
 from llm import ask_llm
 
 text = load_pdf("book.pdf")
 chunks = split_text(text)
-prepare_chunks(chunks)
 
 print("AI Tutor (type 'bye' to exit)")
 
@@ -15,7 +14,8 @@ while True:
         print("Goodbye")
         break
 
-    result = retrieve(question)
+    result = []
+    result = retrieve(question, chunks)
 
     if not result:
         print("Ai: I couldn't find relevant information in the document.")

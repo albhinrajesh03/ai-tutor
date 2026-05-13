@@ -2,16 +2,12 @@ AI Tutor
 
 A simple RAG-based AI Tutor built using:
 - Python
-- ChromaDB
-- Sentence Transformers
-- CrossEncoder Reranking
 - Ollama (phi3:mini)
 
 Features:
 - PDF text extraction
 - Chunking
-- Semantic search
-- Reranking
+- Word Search
 - Local LLM integration
 
 Run Project:
