@@ -1,5 +1,5 @@
 from pdf_loader import load_pdf
-from faiss_rag import split_text, prepare_chunks, retrieve
+from faiss_cosine_rag import split_text, prepare_chunks, retrieve
 from llm import ask_llm
 
 text = load_pdf("book.pdf")

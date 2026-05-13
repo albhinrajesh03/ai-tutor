@@ -8,11 +8,11 @@ A simple semantic RAG-based AI Tutor built using:
 
 Features:
 - PDF text extraction
-- Smart text chunking with overlap
-- Semantic search using embeddings
-- FAISS vector retrieval
+- Overlapping text chunking
+- Semantic vector search
+- Embedding normalization
+- FAISS similarity search
 - Local LLM integration
-- Context-aware AI responses
 - Fully offline AI Tutor
 
 Run Project:
