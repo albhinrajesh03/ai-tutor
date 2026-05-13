@@ -1,4 +1,4 @@
 pypdf
 requests
-numpy
 sentence_transformers
+faiss-cpu
