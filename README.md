@@ -1,19 +1,19 @@
 AI Tutor
 
-A simple semantic RAG-based AI Tutor built using:
+A simple RAG-based AI Tutor built using:
 - Python
-- Ollama (`phi3:mini`)
+- ChromaDB
 - Sentence Transformers (`all-MiniLM-L6-v2`)
-- FAISS Vector Database
+- Ollama (`phi3:mini`)
 
 Features:
 - PDF text extraction
 - Overlapping text chunking
-- Semantic vector search
-- Embedding normalization
-- FAISS similarity search
+- Semantic search
+- Persistent vector database
+- ChromaDB integration
 - Local LLM integration
-- Fully offline AI Tutor
+- Offline RAG pipeline
 
 Run Project:
 python app.py

@@ -1,5 +1,4 @@
 pypdf
 requests
 sentence_transformers
-faiss-cpu
-numpy
+chromadb
