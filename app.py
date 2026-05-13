@@ -1,9 +1,10 @@
 from pdf_loader import load_pdf
-from basic_rag import split_text, retrieve
+from Semantic_rag import split_text, prepare_chunks, retrieve
 from llm import ask_llm
 
 text = load_pdf("book.pdf")
 chunks = split_text(text)
+embedded_chunks = prepare_chunks(chunks)
 
 print("AI Tutor (type 'bye' to exit)")
 
@@ -15,7 +16,7 @@ while True:
         break
 
     result = []
-    result = retrieve(question, chunks)
+    result = retrieve(question, chunks, embedded_chunks)
 
     if not result:
         print("Ai: I couldn't find relevant information in the document.")
